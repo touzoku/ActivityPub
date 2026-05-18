@@ -5,6 +5,7 @@
  * This file violates our architectural patterns and should be refactored.
  */
 
+import { importJwk, type Protocol, verifyObject } from '@fedify/fedify';
 import {
     Accept,
     Announce,
@@ -13,15 +14,12 @@ import {
     Follow,
     Group,
     Image,
-    importJwk,
     Like,
     Note,
     Person,
-    type Protocol,
     Undo,
     Update,
-    verifyObject,
-} from '@fedify/fedify';
+} from '@fedify/vocab';
 import * as Sentry from '@sentry/node';
 
 import type { AccountService } from '@/account/account.service';
@@ -1337,7 +1335,7 @@ export async function nodeInfoDispatcher(_ctx: FedifyRequestContext) {
     return {
         software: {
             name: 'ghost',
-            version: { major: 0, minor: 1, patch: 0 },
+            version: '0.1.0',
             homepage: new URL('https://ghost.org/'),
             repository: new URL('https://github.com/TryGhost/Ghost'),
         },

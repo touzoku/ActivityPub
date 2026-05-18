@@ -9,7 +9,7 @@ import {
     Mention,
     PUBLIC_COLLECTION,
     Update,
-} from '@fedify/fedify';
+} from '@fedify/vocab';
 import { Temporal } from '@js-temporal/polyfill';
 
 import type { Account } from '@/account/account.entity';

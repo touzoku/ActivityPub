@@ -1,9 +1,4 @@
-import {
-    Activity,
-    CollectionPage,
-    isActor,
-    lookupObject,
-} from '@fedify/fedify';
+import { Activity, CollectionPage, isActor, lookupObject } from '@fedify/vocab';
 import type { Knex } from 'knex';
 
 import type { Account } from '@/account/account.entity';
@@ -278,7 +273,7 @@ export class AccountPostsView {
         const context = this.fedifyContextFactory.getFedifyContext();
 
         const documentLoader = await context.getDocumentLoader({
-            handle: 'index',
+            identifier: 'index',
         });
 
         // Lookup actor by handle
@@ -835,7 +830,7 @@ export class AccountPostsView {
             try {
                 const context = this.fedifyContextFactory.getFedifyContext();
                 const documentLoader = await context.getDocumentLoader({
-                    handle: 'index',
+                    identifier: 'index',
                 });
                 const actor = await lookupObject(apId, { documentLoader });
 

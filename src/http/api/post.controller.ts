@@ -1,16 +1,16 @@
 import { createHash } from 'node:crypto';
 
+import type { Federation } from '@fedify/fedify';
 import {
     type Actor,
     Announce,
     Create,
-    type Federation,
     Image,
     Mention,
     Note,
     PUBLIC_COLLECTION,
     Undo,
-} from '@fedify/fedify';
+} from '@fedify/vocab';
 import { Temporal } from '@js-temporal/polyfill';
 import { z } from 'zod';
 

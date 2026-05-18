@@ -1,6 +1,6 @@
 import { beforeAll, beforeEach, describe, expect, it, vi } from 'vitest';
 
-import { Create, Follow, Note, Undo } from '@fedify/fedify';
+import { Create, Follow, Note, Undo } from '@fedify/vocab';
 import { Temporal } from '@js-temporal/polyfill';
 import type { Logger } from '@logtape/logtape';
 import type { Knex } from 'knex';

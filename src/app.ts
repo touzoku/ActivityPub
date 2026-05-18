@@ -3,24 +3,26 @@ import 'reflect-metadata';
 import { AsyncLocalStorage } from 'node:async_hooks';
 import { createHmac } from 'node:crypto';
 
+import type {
+    Context,
+    Federation,
+    KvStore,
+    RequestContext,
+} from '@fedify/fedify';
+import { federation } from '@fedify/hono';
 import {
     Accept,
     Announce,
     Article,
-    type Context,
     Create,
     Delete,
-    type Federation,
     Follow,
-    type KvStore,
     Like,
     Note,
     Reject,
-    type RequestContext,
     Undo,
     Update,
-} from '@fedify/fedify';
-import { federation } from '@fedify/hono';
+} from '@fedify/vocab';
 import { serve } from '@hono/node-server';
 import { serveStatic } from '@hono/node-server/serve-static';
 import {
