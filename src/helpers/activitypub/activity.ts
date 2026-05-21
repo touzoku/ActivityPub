@@ -10,7 +10,6 @@ import {
     PUBLIC_COLLECTION,
     Update,
 } from '@fedify/vocab';
-import { Temporal } from '@js-temporal/polyfill';
 
 import type { Account } from '@/account/account.entity';
 import type { FedifyContext } from '@/app';

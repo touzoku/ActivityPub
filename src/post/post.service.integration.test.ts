@@ -9,7 +9,6 @@ import {
     Mention,
     Note,
 } from '@fedify/vocab';
-import { Temporal } from '@js-temporal/polyfill';
 import type { Logger } from '@logtape/logtape';
 import type { Knex } from 'knex';
 

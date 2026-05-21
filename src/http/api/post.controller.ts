@@ -11,7 +11,6 @@ import {
     PUBLIC_COLLECTION,
     Undo,
 } from '@fedify/vocab';
-import { Temporal } from '@js-temporal/polyfill';
 import { z } from 'zod';
 
 import type { KnexAccountRepository } from '@/account/account.repository.knex';

@@ -1,4 +1,7 @@
 import 'reflect-metadata';
+// Must come before any import that touches `Temporal.*` so the polyfill is
+// installed on `globalThis` before Fedify or our own code dereferences it.
+import '@/temporal-polyfill';
 
 import { AsyncLocalStorage } from 'node:async_hooks';
 import { createHmac } from 'node:crypto';
