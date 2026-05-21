@@ -21,6 +21,8 @@ import { UpdateHandler } from '@/activity-handlers/update.handler';
 import { FedifyContextFactory } from '@/activitypub/fedify-context.factory';
 import { FediverseBridge } from '@/activitypub/fediverse-bridge';
 import { FollowersService } from '@/activitypub/followers.service';
+import { NodeInfoService } from '@/activitypub/nodeinfo.service';
+import { NodeInfoEventService } from '@/activitypub/nodeinfo-event.service';
 import { DeleteDispatcher } from '@/activitypub/object-dispatchers/delete.dispatcher';
 import type { ContextData } from '@/app';
 import { AsyncEvents } from '@/core/events';
@@ -37,6 +39,7 @@ import {
     createOutboxDispatcher,
     createUndoHandler,
     keypairDispatcher,
+    nodeInfoDispatcher,
 } from '@/dispatchers';
 import { EventSerializer } from '@/events/event';
 import { PubSubEvents } from '@/events/pubsub';
@@ -313,6 +316,11 @@ export function registerDependencies(
         'postInteractionCountsService',
         asClass(PostInteractionCountsService).singleton(),
     );
+    container.register('nodeInfoService', asClass(NodeInfoService).singleton());
+    container.register(
+        'nodeInfoEventService',
+        asClass(NodeInfoEventService).singleton(),
+    );
     container.register(
         'ghostService',
         asValue({
@@ -389,6 +397,11 @@ export function registerDependencies(
     container.register(
         'keypairDispatcher',
         asFunction(keypairDispatcher).singleton(),
+    );
+
+    container.register(
+        'nodeInfoDispatcher',
+        asFunction(nodeInfoDispatcher).singleton(),
     );
 
     container.register(
