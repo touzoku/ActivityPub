@@ -447,19 +447,19 @@
     "@opentelemetry/semantic-conventions" "^1.28.0"
     minimatch "^10.2.4"
 
-"@fedify/cli@2.2.1":
-  version "2.2.1"
-  resolved "https://registry.yarnpkg.com/@fedify/cli/-/cli-2.2.1.tgz#e466eab814ac672d078263c1fbe8a76161541c41"
-  integrity sha512-XwOUcelWGYwK4x79XoiNXgDsKbWdYPBRmnjtExG2WZaFCzLG0O61uZIFy63muCYyD3Qwz12Xg5yoYcW1mShJRw==
+"@fedify/cli@2.2.3":
+  version "2.2.3"
+  resolved "https://registry.yarnpkg.com/@fedify/cli/-/cli-2.2.3.tgz#a98bf443fc21098257924f03fc76ccd6aaabff19"
+  integrity sha512-lX8WtcOfwJu01a+jS+J43egvgqYnlRwJVW1vU/EXUv4gGoOLwfqzTvAuCTIX7yADHmkgoOEmMtcYWQ/HmUCLpA==
   dependencies:
-    "@fedify/fedify" "2.2.1"
-    "@fedify/init" "2.2.1"
-    "@fedify/relay" "2.2.1"
-    "@fedify/sqlite" "2.2.1"
-    "@fedify/vocab" "2.2.1"
-    "@fedify/vocab-runtime" "2.2.1"
-    "@fedify/vocab-tools" "2.2.1"
-    "@fedify/webfinger" "2.2.1"
+    "@fedify/fedify" "2.2.3"
+    "@fedify/init" "2.2.3"
+    "@fedify/relay" "2.2.3"
+    "@fedify/sqlite" "2.2.3"
+    "@fedify/vocab" "2.2.3"
+    "@fedify/vocab-runtime" "2.2.3"
+    "@fedify/vocab-tools" "2.2.3"
+    "@fedify/webfinger" "2.2.3"
     "@fxts/core" "^1.20.0"
     "@hongminhee/localtunnel" "^0.3.0"
     "@inquirer/prompts" "^7.8.4"
@@ -491,14 +491,14 @@
     srvx "^0.8.7"
     valibot "^1.2.0"
 
-"@fedify/fedify@2.2.1":
-  version "2.2.1"
-  resolved "https://registry.yarnpkg.com/@fedify/fedify/-/fedify-2.2.1.tgz#ee193f80d41f004261e0ec4757439bd1f286bbeb"
-  integrity sha512-OIxa7+Kp6KDpz8v6bgo67Zg8fWRNdyNbOx21WrJbPhh6RaSl7SkVm1GAQ2ehIS318ipoFUD00DvM6sKbcR+DYg==
+"@fedify/fedify@2.2.3", "@fedify/fedify@^2.2.3":
+  version "2.2.3"
+  resolved "https://registry.yarnpkg.com/@fedify/fedify/-/fedify-2.2.3.tgz#8c6a87096a62a53d4736b93fc6f4125b75615f78"
+  integrity sha512-mEczGCZVZsgQQj8gCKZizOJsOuV3kOBpMVPJrhmOkE+RKh8XjnZwtzPwN2UWp4Yt2E9YsKg3fSxNJmJW/o4uDQ==
   dependencies:
-    "@fedify/vocab" "2.2.1"
-    "@fedify/vocab-runtime" "2.2.1"
-    "@fedify/webfinger" "2.2.1"
+    "@fedify/vocab" "2.2.3"
+    "@fedify/vocab-runtime" "2.2.3"
+    "@fedify/webfinger" "2.2.3"
     "@js-temporal/polyfill" "^0.5.1"
     "@logtape/logtape" "^2.0.5"
     "@opentelemetry/api" "^1.9.0"
@@ -514,38 +514,15 @@
     url-template "^3.1.1"
     urlpattern-polyfill "^10.1.0"
 
-"@fedify/fedify@^2.2.1":
-  version "2.2.2"
-  resolved "https://registry.yarnpkg.com/@fedify/fedify/-/fedify-2.2.2.tgz#850b4dfa3d8f9e42612875416838641758d15d9b"
-  integrity sha512-MVCEGX3y2ryOUZpA0fxbSUFM7jl3gFcHEdOBlBYBAqMmgGGc3mCbfpQV7ForbpcvQEnYTbSwaDN5NxBedLJvIw==
-  dependencies:
-    "@fedify/vocab" "2.2.2"
-    "@fedify/vocab-runtime" "2.2.2"
-    "@fedify/webfinger" "2.2.2"
-    "@js-temporal/polyfill" "^0.5.1"
-    "@logtape/logtape" "^2.0.5"
-    "@opentelemetry/api" "^1.9.0"
-    "@opentelemetry/core" "^2.5.0"
-    "@opentelemetry/sdk-trace-base" "^2.5.0"
-    "@opentelemetry/semantic-conventions" "^1.39.0"
-    byte-encodings "^1.0.11"
-    es-toolkit "1.43.0"
-    json-canon "^1.0.1"
-    jsonld "^9.0.0"
-    structured-field-values "^2.0.4"
-    uri-template-router "^1.0.0"
-    url-template "^3.1.1"
-    urlpattern-polyfill "^10.1.0"
+"@fedify/hono@2.2.3":
+  version "2.2.3"
+  resolved "https://registry.yarnpkg.com/@fedify/hono/-/hono-2.2.3.tgz#33f6c78e17a4586f1526ff96736d69f2cdd95197"
+  integrity sha512-cIL4m1t609y7mcvg9pbDlw2jCnpcW+WpVSQDYs/AWnXKu0Qf1ECYxGDByqNyGX8KBvPIDw4jRQ5Lkm+1LknkCg==
 
-"@fedify/hono@2.2.1":
-  version "2.2.1"
-  resolved "https://registry.yarnpkg.com/@fedify/hono/-/hono-2.2.1.tgz#e39d5f64c535dc1cd21ed6138839d46c0122878d"
-  integrity sha512-qQukjHIUcdbGmbgttHXAv/mf2SAmSyFHZtxLzXHPseni1u/d8EtUCJn5OyVn/9xpYb7DIoiao90FQmBhk6IarQ==
-
-"@fedify/init@2.2.1":
-  version "2.2.1"
-  resolved "https://registry.yarnpkg.com/@fedify/init/-/init-2.2.1.tgz#920311881e164b2a4f39fe98863b655120d76477"
-  integrity sha512-zPYb4vKKYsFlqwvtsc0ZI3EgZFOF7lVCy8U4d1abEdPCbCO+FvOFMriSvgc7174Z6Ci+brXRlYbkcrM5zyv4fQ==
+"@fedify/init@2.2.3":
+  version "2.2.3"
+  resolved "https://registry.yarnpkg.com/@fedify/init/-/init-2.2.3.tgz#d25f0a280285f40e3cdaae183cdd5cc4bd173d21"
+  integrity sha512-e2ctjqmk3EIkVXMUpSv0gFB9PrSVuZ/DLRIG7343UzwTgwrPTcTrWH6kgrCQMXrCFYMy7Sl53LSC0Zdev4EHPg==
   dependencies:
     "@david/dax" "npm:dax@^0.45.0"
     "@fxts/core" "^1.20.0"
@@ -557,50 +534,37 @@
     es-toolkit "1.43.0"
     inquirer-toggle "^1.0.1"
 
-"@fedify/redis@2.2.1":
-  version "2.2.1"
-  resolved "https://registry.yarnpkg.com/@fedify/redis/-/redis-2.2.1.tgz#d61109825c49d9d4b57ddaabd1f813e9eecccce0"
-  integrity sha512-9jX/U/A+sedaIrEHQrd4mWXKIDEfsAFYxYIrJZm8a2d7CccDsWFKRPULov6WaYqdlx7nCW5DymDUS4+xQudGGw==
+"@fedify/redis@2.2.3":
+  version "2.2.3"
+  resolved "https://registry.yarnpkg.com/@fedify/redis/-/redis-2.2.3.tgz#705fe84318b93597f3b72929016cb8ffb5dd4964"
+  integrity sha512-COM4mn8a+3d2mVLU0VbX6KPI0JBeXMfRIc2s6bZkafNR+/8J6upCUR9NmUpBnVUFwr46Wa3Nd+VESSfiKlGE+A==
   dependencies:
     "@js-temporal/polyfill" "^0.5.1"
     "@logtape/logtape" "^2.0.5"
 
-"@fedify/relay@2.2.1":
-  version "2.2.1"
-  resolved "https://registry.yarnpkg.com/@fedify/relay/-/relay-2.2.1.tgz#312c99ce06898f6ad397d0da0707356882849763"
-  integrity sha512-XiOhcuZ4F7+h+N6c1QaG/XZYtpUuZPtY0bS1MesOL/wadl5bvkpRNB5D4KJbYafSs67vl7qhEy0jcn0mSjuZyw==
+"@fedify/relay@2.2.3":
+  version "2.2.3"
+  resolved "https://registry.yarnpkg.com/@fedify/relay/-/relay-2.2.3.tgz#52e20ae15e76f7e22e83f4e82047a583c2e088d0"
+  integrity sha512-dVZy8/Xn1UZdQYDZb3aF7Q10shvD7crjhaSKLj8DFrLhNvubJi6bCNiaU9umJQHoM24wR7edbBw9HrgayrJj6g==
   dependencies:
-    "@fedify/fedify" "^2.2.1"
-    "@fedify/vocab" "2.2.1"
+    "@fedify/fedify" "^2.2.3"
+    "@fedify/vocab" "2.2.3"
     "@js-temporal/polyfill" "^0.5.1"
     "@logtape/logtape" "^2.0.5"
 
-"@fedify/sqlite@2.2.1":
-  version "2.2.1"
-  resolved "https://registry.yarnpkg.com/@fedify/sqlite/-/sqlite-2.2.1.tgz#4a81f7f7ccaa28220c39ad31537c217b7c084c40"
-  integrity sha512-+QV11b1yu9J/4UnMf2b+J/NhnMeaUXfLUOx4cwlUnVk53JpLpy6aSioEkUUxzADgCijAiCg4P+0vtSn+VbtlAQ==
+"@fedify/sqlite@2.2.3":
+  version "2.2.3"
+  resolved "https://registry.yarnpkg.com/@fedify/sqlite/-/sqlite-2.2.3.tgz#a975428a3b815e7e8a347dfb5414721bd3eb08f9"
+  integrity sha512-ZRBrgN24N7l/9cG8f80gaVTMZQ/1Y4x9sAb+M1mka+CsgMclfbxSt46vNL0KA6/aaFvnYoDzWHZ87E52A6PL6g==
   dependencies:
     "@js-temporal/polyfill" "^0.5.1"
     "@logtape/logtape" "^2.0.5"
     es-toolkit "^1.31.0"
 
-"@fedify/vocab-runtime@2.2.1":
-  version "2.2.1"
-  resolved "https://registry.yarnpkg.com/@fedify/vocab-runtime/-/vocab-runtime-2.2.1.tgz#ad4f7786f491d861111bafd2cf4052bdc1af9987"
-  integrity sha512-NRnlhUv2mmVGNMrjhmTUMN1gZaDax8KmBkUHV3U5PMDSA2aSGQ/iWCruoV4TeaCAI1nX1AW0kAH8Q9Uwkb6f8Q==
-  dependencies:
-    "@logtape/logtape" "^2.0.5"
-    "@multiformats/base-x" "^4.0.1"
-    "@opentelemetry/api" "^1.9.0"
-    asn1js "^3.0.6"
-    byte-encodings "^1.0.11"
-    jsonld "^9.0.0"
-    pkijs "^3.3.3"
-
-"@fedify/vocab-runtime@2.2.2":
-  version "2.2.2"
-  resolved "https://registry.yarnpkg.com/@fedify/vocab-runtime/-/vocab-runtime-2.2.2.tgz#74e909f38f0fbee2b054ac6ab4a109497e22297a"
-  integrity sha512-FAo1c+kwBk5hvcIqWAxsWmvK5LCuc6tLMTnrR2H2jpUGuhrhOqushCO5ZS5F4BOh+gACVFY5oY2I1WpBia74nw==
+"@fedify/vocab-runtime@2.2.3":
+  version "2.2.3"
+  resolved "https://registry.yarnpkg.com/@fedify/vocab-runtime/-/vocab-runtime-2.2.3.tgz#1646790c56013a2d30b856ea947f62d4e36fa937"
+  integrity sha512-MDAW28KooWhj9z3HQY3nDhVJ15HkgD4TOCK8vHCoARy1Q4HmTUGXZZzUdGiSuefQkm5mW7VckImCDNj05dIAPA==
   dependencies:
     "@js-temporal/polyfill" "^0.5.1"
     "@logtape/logtape" "^2.0.5"
@@ -611,34 +575,24 @@
     jsonld "^9.0.0"
     pkijs "^3.3.3"
 
-"@fedify/vocab-tools@2.2.1":
-  version "2.2.1"
-  resolved "https://registry.yarnpkg.com/@fedify/vocab-tools/-/vocab-tools-2.2.1.tgz#174bff147086b2ae6a4df6543c94f819c962c11c"
-  integrity sha512-b8Gu/clgudHjSSWEVrzm3N85xlAk23keNAxLPL6uQp+oybtG7ZvBXyUMOwFvrQLKtAmcPvRh0XXVETMN2hWv2g==
+"@fedify/vocab-tools@2.2.3":
+  version "2.2.3"
+  resolved "https://registry.yarnpkg.com/@fedify/vocab-tools/-/vocab-tools-2.2.3.tgz#f23461f059b6face5e96a4e9d1cd180cfc855437"
+  integrity sha512-zmaRKeJk+7wC7kgiiQNX6PpGgNaQTwjEBCREqXdZuY0Zw2lYeoyzL3F8PEIttOUIxdBdBxGOC9/HE6AVMndN6Q==
   dependencies:
     "@cfworker/json-schema" "^4.1.1"
     byte-encodings "^1.0.11"
     es-toolkit "^1.39.10"
     yaml "^2.8.1"
 
-"@fedify/vocab-tools@2.2.2":
-  version "2.2.2"
-  resolved "https://registry.yarnpkg.com/@fedify/vocab-tools/-/vocab-tools-2.2.2.tgz#6dcbdaf925adff126be8044e68316046e5072068"
-  integrity sha512-62oA8Y65lXg2rZvywq84RTsPD2z1eRjU1gs/dnqX4O5F+EU8OwjR/QYLjrpvNdbpvqUqJmBuIm4xk2juti6yNQ==
+"@fedify/vocab@2.2.3":
+  version "2.2.3"
+  resolved "https://registry.yarnpkg.com/@fedify/vocab/-/vocab-2.2.3.tgz#27c8cb67f75cd7bd9e6e2f30ce0fec6769aa05ce"
+  integrity sha512-a5llEaCj3f9UGIY+t1PadGdfhMt0tY1TnpMTtx2Ulw+U8ONKAbRTz9Wnq2QWAF7Yp7JOqyy/EluZ2w/AIUNSGw==
   dependencies:
-    "@cfworker/json-schema" "^4.1.1"
-    byte-encodings "^1.0.11"
-    es-toolkit "^1.39.10"
-    yaml "^2.8.1"
-
-"@fedify/vocab@2.2.1":
-  version "2.2.1"
-  resolved "https://registry.yarnpkg.com/@fedify/vocab/-/vocab-2.2.1.tgz#eed3894192693d7396e00ef02cae2c88d58ae135"
-  integrity sha512-sYVnwJLUYEiG6AuxR7Q+eYA3c+PzcZSDGxjmkFnMQ4mO1IU6G9Od85b66buGIV29g1+mgTYJLkBvNiLEOqBbaA==
-  dependencies:
-    "@fedify/vocab-runtime" "2.2.1"
-    "@fedify/vocab-tools" "2.2.1"
-    "@fedify/webfinger" "2.2.1"
+    "@fedify/vocab-runtime" "2.2.3"
+    "@fedify/vocab-tools" "2.2.3"
+    "@fedify/webfinger" "2.2.3"
     "@js-temporal/polyfill" "^0.5.1"
     "@logtape/logtape" "^2.0.5"
     "@multiformats/base-x" "^4.0.1"
@@ -648,39 +602,12 @@
     jsonld "^9.0.0"
     pkijs "^3.3.3"
 
-"@fedify/vocab@2.2.2":
-  version "2.2.2"
-  resolved "https://registry.yarnpkg.com/@fedify/vocab/-/vocab-2.2.2.tgz#69608c626caa3c52987b191dcb47ce72f0ed4a1e"
-  integrity sha512-tmsqPZijXnWdgcho7zJD/X483aFCl1LevOwDCrmaRg6US8kyhlqQBZpPCXNrBfnxdyvdKkST8E8oU3+/Ng1B/w==
+"@fedify/webfinger@2.2.3":
+  version "2.2.3"
+  resolved "https://registry.yarnpkg.com/@fedify/webfinger/-/webfinger-2.2.3.tgz#b5811bd5670e731432b87be864c2ec3c224b53c9"
+  integrity sha512-WJQw0cKkSfK4IbdPc+z9ODspYDO+t0q5dIRo7eR/oO31yqVGjwLYJsDL0dlyXQ0WF/Q+Qrfw2fQOvTs9Xarc9g==
   dependencies:
-    "@fedify/vocab-runtime" "2.2.2"
-    "@fedify/vocab-tools" "2.2.2"
-    "@fedify/webfinger" "2.2.2"
-    "@js-temporal/polyfill" "^0.5.1"
-    "@logtape/logtape" "^2.0.5"
-    "@multiformats/base-x" "^4.0.1"
-    "@opentelemetry/api" "^1.9.0"
-    asn1js "^3.0.6"
-    es-toolkit "1.43.0"
-    jsonld "^9.0.0"
-    pkijs "^3.3.3"
-
-"@fedify/webfinger@2.2.1":
-  version "2.2.1"
-  resolved "https://registry.yarnpkg.com/@fedify/webfinger/-/webfinger-2.2.1.tgz#638e541b73cdedcee673a979a407a96b3a2599e0"
-  integrity sha512-gRGgjCLgfvovLstTAa7U4d170SsQQSb0pIPCyE7hMRvzdgU+uIPwbtgm5Btbe/ZognzCN2Q6ELx+tAsuQGbY5g==
-  dependencies:
-    "@fedify/vocab-runtime" "2.2.1"
-    "@logtape/logtape" "^2.0.5"
-    "@opentelemetry/api" "^1.9.0"
-    es-toolkit "1.43.0"
-
-"@fedify/webfinger@2.2.2":
-  version "2.2.2"
-  resolved "https://registry.yarnpkg.com/@fedify/webfinger/-/webfinger-2.2.2.tgz#711ac89ff83a069cd281bcd21b3c89f33e8155d2"
-  integrity sha512-tFGZpZXnAJbhMFacabhOW4Zj+7Q/3rpj9lBN9GvVCC/J4dIXnQSVXW5Xt4g6ugurOvq1XwRGWSz+g4YVKx4K4w==
-  dependencies:
-    "@fedify/vocab-runtime" "2.2.2"
+    "@fedify/vocab-runtime" "2.2.3"
     "@logtape/logtape" "^2.0.5"
     "@opentelemetry/api" "^1.9.0"
     es-toolkit "1.43.0"
